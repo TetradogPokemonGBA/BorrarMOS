@@ -35,7 +35,8 @@ namespace MOSinMedallas
 
 		private void MenuItem_Click(object sender, RoutedEventArgs e)
 		{
-			MessageBox.Show("Esta aplicación permite inGAME poder borrar una  MO como un ataque más \n\nDesarrollado por Pikachu240 investigado por JPAN", "Sobre la App");
+			if(MessageBox.Show("Esta aplicación permite inGAME poder borrar una  MO como un ataque más \n\nDesarrollado por Pikachu240 investigado por JPAN\nQuieres ver el codigo fuente?", "Sobre la App",MessageBoxButton.YesNo,MessageBoxImage.Information)==MessageBoxResult.Yes)
+				System.Diagnostics.Process.Start("https://github.com/TetradogPokemonGBA/BorrarMOS");
 		}
 
 		private void MenuItem_Click_1(object sender, RoutedEventArgs e)
